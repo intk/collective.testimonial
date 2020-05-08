@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.testimonial">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="collective.testimonial.interfaces.ICollectiveTestimonialLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.testimonial"
+      type="plone"
+      directory="static"
+      />
+
+  <browser:page
+      name="testimonial_redirect_view"
+      for="plone.app.contenttypes.interfaces.ILink"
+      class=".testimonial_redirect_view.TestimonialRedirectView"
+      layer="plone.app.contenttypes.interfaces.IPloneAppContenttypesLayer"
+      permission="zope2.View"
+      menu="plone_displayviews"
+      title="View Testimonial"
+      />
+
+</configure>

@@ -1,0 +1,5 @@
+==================
+collective.testimonial
+==================
+
+User documentation
