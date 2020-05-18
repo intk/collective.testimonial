@@ -30,6 +30,10 @@ src/collective/testimonial/permissions.py
 src/collective/testimonial/permissions.zcml
 src/collective/testimonial/setuphandlers.py
 src/collective/testimonial/testing.py
+src/collective/testimonial/behaviors/__init__.py
+src/collective/testimonial/behaviors/configure.zcml
+src/collective/testimonial/behaviors/testimonial.py
+src/collective/testimonial/behaviors/vocabularies.py
 src/collective/testimonial/browser/__init__.py
 src/collective/testimonial/browser/__init__.pyo
 src/collective/testimonial/browser/configure.zcml
@@ -37,7 +41,6 @@ src/collective/testimonial/browser/testimonial_redirect_view.py
 src/collective/testimonial/browser/overrides/.gitkeep
 src/collective/testimonial/browser/static/.gitkeep
 src/collective/testimonial/browser/templates/testimonial.pt
-src/collective/testimonial/browser/templates/person.pt
 src/collective/testimonial/locales/README.rst
 src/collective/testimonial/locales/__init__.py
 src/collective/testimonial/locales/__init__.pyo
